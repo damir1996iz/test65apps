@@ -1,11 +1,11 @@
 # test65apps
 Test project for 65apps company
-
-Stack:
-Kotlin 
-Room 
-Retrofit2
-Picasso
-Single Activity with multiple Fragments(Navigation)
-Hilt DI
-MVVM with StateFlow
+ <br />
+Stack: <br />
+Kotlin  <br />
+Room  <br />
+Retrofit2  <br />
+Picasso  <br />
+Single Activity with multiple Fragments(Navigation)  <br />
+Hilt DI  <br />
+MVVM with StateFlow  <br />
