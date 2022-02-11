@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">test65appsfragments</string>
+    <string name="company_name">65Apps</string>
+    <string name="loading_text">Идет загрузка…</string>
+    <string name="error_text">Произошла ошибка</string>
+    <string name="retry_text">Повторить</string>
+    <string name="ignore_text">Игнорировать</string>
+    <string name="si_subtitle">Подробнее</string>
+    <string name="nothingfound_text">Ничего не найдено</string>
+
+    <string name="template_fname_sname">%1s %2s</string>
+    <string name="template_year_age">%1s / %2d</string>
+    <string name="template_age">Возраст: %1d</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.damikkg.test65appsfragments.presentation.welcome.WelcomeFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/welcome_fragment" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_specialtyFragment"
+            app:destination="@id/specialtyFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/specialtyFragment"
+        android:name="com.damikkg.test65appsfragments.presentation.speclist.SpecialtyFragment"
+        android:label="specialty_fragment"
+        tools:layout="@layout/specialty_fragment" >
+        <action
+            android:id="@+id/action_specialtyFragment_to_personsListFragment"
+            app:destination="@id/personsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personsListFragment"
+        android:name="com.damikkg.test65appsfragments.presentation.personslist.PersonsListFragment"
+        android:label="persons_list_fragment"
+        tools:layout="@layout/persons_list_fragment" >
+        <argument
+            android:name="spec"
+            app:argType="com.damikkg.test65appsfragments.domain.models.Speciality" />
+        <action
+            android:id="@+id/action_personsListFragment_to_personFragment"
+            app:destination="@id/personFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personFragment"
+        android:name="com.damikkg.test65appsfragments.presentation.person.PersonFragment"
+        android:label="person_fragment"
+        tools:layout="@layout/person_fragment" >
+        <argument
+            android:name="person"
+            app:argType="com.damikkg.test65appsfragments.domain.models.Person" />
+    </fragment>
+</navigation>
